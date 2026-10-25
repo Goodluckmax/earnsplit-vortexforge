@@ -1,0 +1,24 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Sign Up - VortexForge Studios</title><link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#00FF88">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EarnSplit">
+
+</head><body>
+<header class="main-header"><div class="container nav"><div class="logo">VORTEXFORGE <span>STUDIOS</span></div><a href="index.html">← Back to Home</a></div></header>
+<div class="form-wrap"><h2>Create account</h2><p>Join VortexForge Studios - 70% to you, 30% to us. International + Nigeria.</p><form onsubmit="signupUser(event)"><label>Full Name</label><input id="name" required placeholder="John Doe"><label>Email</label><input id="email" type="email" required><label>Country</label><select id="country"><option value="NG">Nigeria</option><option value="US">United States</option><option value="UK">United Kingdom</option><option value="CA">Canada</option><option value="DE">Germany</option><option value="ALL">Other</option></select><label>Password</label><input type="password" required><p style="font-size:11px;color:#666;margin-top:8px">By signing up, you agree to 70/30 split: 70% to you, 30% to VortexForge Studios received via Wise/Geegpay from network dashboards. Paystack only for NG payouts.</p><button class="btn" style="width:100%;margin-top:12px">Create Account</button></form><p style="margin-top:16px;text-align:center">Have account? <a href="login.html" style="color:#00FF88">Login</a></p></div>
+<script src="js/config.js"></script><script src="js/auth.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('SW registered - EarnSplit PWA ready'))
+      .catch(err => console.log('SW failed', err));
+  });
+}
+</script>
+
+</body></html>

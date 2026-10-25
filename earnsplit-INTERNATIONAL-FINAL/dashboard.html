@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Dashboard - VortexForge Studios</title><link rel="stylesheet" href="css/style.css">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#00FF88">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EarnSplit">
+
+</head><body>
+<header class="main-header"><div class="container nav"><div class="logo">VORTEXFORGE <span>STUDIOS</span> <small>EarnSplit</small></div><div class="nav-links"><a href="index.html">Home</a><a href="pages/support.html">Customer Care</a><a href="pages/profile.html">Profile: <span data-user-name>Demo</span></a><button class="btn-outline btn-small" onclick="logout()">Logout</button></div></div></header>
+<div class="container">
+  <div class="stats" style="margin-top:20px">
+    <div class="card"><p>Your Balance (70%)</p><h2 id="balance">$24.50</h2><span>Withdrawable</span></div>
+    <div class="card"><p>Pending (7-day hold)</p><h2>$<span id="pending">8.20</span></h2><span>Anti-fraud</span></div>
+    <div class="card"><p>Referral Code</p><h2 data-referral-code>VORTEX123</h2><span>Share & earn 10% from our 30%</span></div>
+    <div class="card" style="background:#00FF88;color:black"><p>Withdraw</p><h2>Min $10</h2><button onclick="openWithdraw()" style="margin-top:6px;background:black;color:white;border:none;padding:6px 12px;border-radius:8px;font-size:12px;cursor:pointer">PayPal • Wise • USDT • Paystack</button></div>
+  </div>
+  <div style="background:#0F1A14;border:1px solid #00FF8833;border-radius:12px;padding:14px;display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;flex-wrap:wrap;gap:10px"><div><b>🚀 Boost Earnings 2x for 30 mins</b><small style="display:block;color:#888">Watch ad • 70% to you • $15 CPM • Your 30% goes to Wise</small></div><button class="btn" onclick="watchAd()">Watch Ad</button></div>
+  <div class="filters"><button class="filter active" data-filter="ALL">ALL (500+)</button><button class="filter" data-filter="US">US High Pay</button><button class="filter" data-filter="NG">NG Offers</button><button class="filter" data-filter="Survey">Surveys</button><button class="filter" data-filter="App">Apps</button><button class="filter" data-filter="Affiliate">Affiliate $20+</button></div>
+  <div id="offers-grid" class="grid"></div>
+  <div class="card" style="margin-top:24px"><h3>Recent 70/30 Splits</h3><div id="activity-list"></div></div>
+</div>
+<footer><div class="container footer-grid"><div><div class="logo">VORTEXFORGE <span>STUDIOS</span></div><p>Email: support@vortexforgestudios.com | WhatsApp: +234 800 000 0000</p><p>Your 30% is received via Wise/Geegpay from BitLabs, Timewall, Monetag dashboards. Paystack only for NG user payouts.</p></div><div><h4>Product</h4><a href="dashboard.html">Dashboard</a><a href="pages/profile.html">Profile</a></div><div><h4>Support</h4><a href="pages/support.html">Customer Care</a></div><div><h4>Legal</h4><a href="pages/terms.html">Terms & Privacy</a></div></div></footer>
+<script src="js/config.js"></script><script src="js/auth.js"></script><script src="js/wallet.js"></script><script src="js/app.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('SW registered - EarnSplit PWA ready'))
+      .catch(err => console.log('SW failed', err));
+  });
+}
+</script>
+
+</body></html>

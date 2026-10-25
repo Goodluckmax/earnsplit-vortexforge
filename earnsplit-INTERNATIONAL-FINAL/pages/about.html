@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>About 70/30 - VortexForge Studios</title><link rel="stylesheet" href="../css/style.css">
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" type="image/png" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<meta name="theme-color" content="#00FF88">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EarnSplit">
+
+</head><body>
+<header class="main-header"><div class="container nav"><div class="logo">VORTEXFORGE <span>STUDIOS</span></div><a href="../index.html">← Home</a></div></header>
+<div class="container" style="max-width:800px;margin:40px auto"><h1>How EarnSplit 70/30 Works</h1><p style="color:#AAA;margin:12px 0">Built by VortexForge Studios for international users including Nigeria.</p>
+<div class="card" style="margin-top:20px"><h3>1. Where does 30% go?</h3><p>When you complete an offer, advertiser pays BitLabs $2.50. BitLabs owes YOU $2.50. Your code splits: You get $1.75 (70%), VortexForge Studios keeps $0.75 (30%). That $0.75 sits in BitLabs dashboard. BitLabs pays VortexForge weekly via Wise/Geegpay USD account, PayPal, or USDT. You do NOT need Paystack to receive your 30%. Paystack is only needed to collect Pro membership fees from NG users and to pay NG users to their bank.</p></div>
+<div class="card"><h3>2. 10 Networks + 3 Ad Layers</h3><p>We aggregate BitLabs, Timewall, Cpx Research, Primewall, Adscend, AdGate, Lootably, Inbrain, Impact.com, Digistore24. Plus Monetag Rewarded $15 CPM, Adsterra Native $4 CPM, Push notifications. Total 500+ offers, so pool is always full.</p></div>
+<div class="card"><h3>3. Built for Millions</h3><p>Wallet uses UNIQUE transaction ID + Redis lock to prevent double pay when 10k users click at once. 7-day pending prevents fraud. All transactions append-only. Supabase with read replicas for 1M+ users.</p></div>
+<div class="card"><h3>4. International + Nigeria</h3><p>US offers pay $1-$65, NG offers pay $0.5-$5. Geo-targeted. Payouts: PayPal/Wise/USDT for international, Paystack bank transfer for NG. Min $10 USD / ₦5000.</p></div>
+</div>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js')
+      .then(reg => console.log('SW registered - EarnSplit PWA ready'))
+      .catch(err => console.log('SW failed', err));
+  });
+}
+</script>
+
+</body></html>

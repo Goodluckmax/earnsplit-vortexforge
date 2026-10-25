@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Profile - VortexForge Studios</title><link rel="stylesheet" href="../css/style.css">
+<link rel="manifest" href="../manifest.json">
+<link rel="icon" type="image/png" href="../img/icon-192.png">
+<link rel="apple-touch-icon" href="../img/apple-touch-icon.png">
+<meta name="theme-color" content="#00FF88">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EarnSplit">
+
+</head><body>
+<header class="main-header"><div class="container nav"><div class="logo">VORTEXFORGE <span>STUDIOS</span></div><div class="nav-links"><a href="../dashboard.html">Dashboard</a><a href="support.html">Customer Care</a><button class="btn-outline btn-small" onclick="logout()">Logout</button></div></div></header>
+<div class="container"><div class="form-wrap" style="max-width:600px"><h2>Profile</h2><p>Manage your VortexForge Studios account</p><label>Full Name</label><input data-user-name value="Demo User"><label>Email</label><input data-user-email value="demo@example.com"><label>Referral Code (Share to earn 10% from our 30%)</label><input data-referral-code readonly><label>Country</label><select><option>Nigeria</option><option>US</option><option>UK</option></select><label>Payout Method (Where YOU receive YOUR 70%)</label><select><option>PayPal - International</option><option>Wise - International</option><option>USDT TRC20</option><option>Paystack - Nigeria Bank</option></select><label>Payout Address</label><input placeholder="PayPal email or bank account"><button class="btn" style="width:100%;margin-top:12px">Save Profile</button>
+<div style="margin-top:20px;background:#0F1A14;border:1px solid #00FF8833;border-radius:12px;padding:12px;font-size:12px"><b>Where does VortexForge's 30% go?</b><br>Your 30% does NOT need Paystack. VortexForge receives 30% via BitLabs, Timewall, Monetag dashboards which pay weekly to our Wise/Geegpay USD account. Paystack is only for paying NG users and collecting Pro membership fees.</div>
+</div></div>
+<script src="../js/config.js"></script><script src="../js/auth.js"></script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('../sw.js')
+      .then(reg => console.log('SW registered - EarnSplit PWA ready'))
+      .catch(err => console.log('SW failed', err));
+  });
+}
+</script>
+
+</body></html>

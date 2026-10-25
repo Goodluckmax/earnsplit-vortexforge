@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VortexForge Studios - EarnSplit 70/30 Rewards Platform</title>
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="manifest" href="manifest.json">
+<link rel="icon" type="image/png" href="img/icon-192.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta name="theme-color" content="#00FF88">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="EarnSplit">
+
+</head>
+<body>
+<header class="main-header">
+  <div class="container nav">
+    <div class="logo">VORTEXFORGE <span>STUDIOS</span> <small>EarnSplit 70/30</small></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="pages/about.html">About</a>
+      <a href="pages/support.html">Customer Care</a>
+      <a href="pages/terms.html">Terms</a>
+      <a href="login.html" class="btn-outline btn-small">Login</a>
+      <a href="signup.html" class="btn btn-small">Sign Up</a>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <section class="hero">
+    <div>
+      <h1>Earn Money Worldwide.<br><span>70% to You,</span> 30% to Vortex.</h1>
+      <p>VortexForge Studios built EarnSplit - a global rewards platform where you complete tasks, surveys, apps and affiliate offers. We handle 10 networks, ads and affiliate deals. You keep 70% of everything. Transparent, international, built for millions.</p>
+      <div style="display:flex;gap:12px;margin-top:20px">
+        <a href="signup.html" class="btn">Start Earning Now →</a>
+        <a href="pages/about.html" class="btn btn-outline">How 70/30 Works</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>$184k+</b> Paid to users</div>
+        <div><b>12k+</b> Active users</div>
+        <div><b>500+</b> Offers from 10 networks</div>
+      </div>
+    </div>
+    <div class="mock-card">
+      <p style="color:#888;font-size:12px">LIVE 70/30 SPLIT</p>
+      <h3 style="margin:10px 0">Install Temu App - $2.50</h3>
+      <div class="split"><div>Total $2.50</div><div>You $1.75</div><div>Vortex $0.75</div></div>
+      <p style="font-size:12px;color:#888;margin-top:12px">Your 30% goes to VortexForge Studios via BitLabs dashboard payout to our Wise USD account. Paystack only for NG user payouts and Pro membership collection.</p>
+    </div>
+  </section>
+
+  <section style="margin-top:40px">
+    <h2 style="font-size:24px;margin-bottom:16px">Trusted by Users in 50+ Countries</h2>
+    <div class="grid">
+      <div class="card"><h3>10 Offer Networks</h3><p>BitLabs, Timewall, Cpx Research, Primewall, Adscend, AdGate, Lootably, Inbrain, Impact, Digistore - 500+ tasks</p></div>
+      <div class="card"><h3>3 Ad Layers</h3><p>Rewarded Video $15 CPM, Native $4 CPM, Push Notifications - passive income even offline</p></div>
+      <div class="card"><h3>International Payouts</h3><p>PayPal, Wise, USDT for US/UK, Paystack for NG. Min $10 USD / ₦5000</p></div>
+      <div class="card"><h3>7-Day Anti-Fraud</h3><p>All earnings pending 7 days, then approved. Prevents fraud, protects your 30% from reversals</p></div>
+    </div>
+  </section>
+
+  <section style="margin-top:40px;text-align:center;background:#12121A;border:1px solid #1E1E2E;border-radius:20px;padding:40px">
+    <h2>Ready to Earn 70% of Everything?</h2>
+    <p style="color:#888;margin:10px 0">Join VortexForge Studios - 70% to you, 30% to us. Transparent, global, built for millions.</p>
+    <a href="signup.html" class="btn">Create Free Account</a>
+  </section>
+</div>
+
+<footer>
+  <div class="container footer-grid">
+    <div><div class="logo">VORTEXFORGE <span>STUDIOS</span></div><p style="margin-top:10px">Building global reward platforms. EarnSplit is our flagship 70/30 platform with 10 networks, ads and affiliate deals. Your 30% is received via Wise/Geegpay from offerwall dashboards, not via Paystack.</p><p style="margin-top:10px">Email: support@vortexforgestudios.com</p></div>
+    <div><h4>Product</h4><a href="dashboard.html">Dashboard</a><a href="pages/about.html">How 70/30 Works</a><a href="pages/about.html">Where 30% Goes</a></div>
+    <div><h4>Support</h4><a href="pages/support.html">Customer Care</a><a href="pages/support.html">Contact Us</a><a href="pages/support.html">WhatsApp</a></div>
+    <div><h4>Legal</h4><a href="pages/terms.html">Terms</a><a href="pages/terms.html">Privacy</a><a href="pages/terms.html">Refund</a></div>
+  </div>
+  <div class="container" style="margin-top:30px;border-top:1px solid #1E1E2E;padding-top:16px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><span>© 2026 VortexForge Studios. All rights reserved.</span><span>70% to Users • 30% to Platform • Built for Millions</span></div>
+</footer>
+
+<script src="js/config.js"></script>
+
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('SW registered - EarnSplit PWA ready'))
+      .catch(err => console.log('SW failed', err));
+  });
+}
+</script>
+
+</body>
+</html>
